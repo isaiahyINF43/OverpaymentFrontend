@@ -1,0 +1,19 @@
+<div>
+<p>controloverpayments works!</p>
+
+<form class="form" (ngSubmit)="onSubmitGetAll()">
+    <input type="submit" value= "GetAll" class="btn">
+</form>
+
+<form class="form" (ngSubmit)="onSubmitGet()">
+    <input type="text" name="getTextInput" [(ngModel)]="getParToSend"
+    placeholder="Search by memberId">
+    <input type="submit" value= "Get" class="btn">
+</form>
+    
+<form class="form" (ngSubmit)="onSubmitDelete()">
+    <input type="text" name="delTextInput" [(ngModel)]="delParToSend"
+    placeholder="Delete by claimNumber">
+    <input type="submit" value= "Delete" class="btn">
+</form>
+</div>
